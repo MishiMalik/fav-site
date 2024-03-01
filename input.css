@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  
+    .active-nav {
+        @apply  border-b-2 border-solid border-white lg:border-[#f7cd74] ;
+    }
+    .active-nav a{
+        @apply  text-white lg:text-[#f7cd74] ;
+    }
+    .main-heading {
+        @apply font-[500] leading-normal relative w-fit;
+    }
+    .heading2{
+        @apply text-[24px] leading-normal md:text-2xl font-semibold text-gray-800;
+    }
+
+    .heading3{
+        @apply  font-semibold text-gray-800;
+    }
+    .text{
+        @apply font-normal text-gray-600
+    }
+}
+
+body {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Rubik", sans-serif;
+
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    max-width: 1200px !important;
+}
+/* [dir='rtl'] .slider2 {
+    float: left;
+} */
