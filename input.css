@@ -5,11 +5,11 @@
 @layer components {
 
     .active-nav {
-        @apply border-b-2 border-solid border-white lg:border-[#f7cd74];
+        @apply border-b-2 border-solid border-white lg:border-[#CB8966];
     }
 
     .active-nav a {
-        @apply text-white lg:text-[#f7cd74];
+        @apply text-white lg:text-[#CB8966];
     }
 
     .main-heading {
@@ -31,7 +31,7 @@
 
 body {
     /* font-family: "Roboto", sans-serif; */
-    font-family: "Rubik", sans-serif;
+    font-family: "Epilogue", sans-serif;
 
 }
 
