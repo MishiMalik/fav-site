@@ -1915,12 +1915,6 @@ body {
   margin: 0;
 }
 
-@media only screen and (max-width: 7479px) {
-  .carousel__slide figure {
-    justify-content: center;
-  }
-}
-
 .carousel__slide div {
   width: 100%;
   position: relative;
@@ -1952,7 +1946,7 @@ body {
 }
 
 .slick-next,
-.slick-prev{
+.slick-prev {
   background: transparent;
   width: 50px;
   height: 50px;
@@ -1966,31 +1960,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media only screen and (max-width: 767px) {
-  .carousel__slide div {
-    width: 100%;
-  }
-
-  .slick-next {
-    right: -15px !important;
-  }
-
-  .slick-prev {
-    left: -15px !important;
-  }
-
-  .slick-next,
-    .slick-prev{
-    background: transparent;
-    width: 20px;
-    height: 20px;
-    border: 0px solid transparent !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
 }
 
 .carousel__slide img {
@@ -2008,6 +1977,28 @@ body {
 
 .carousel__slide.scrollable {
   overflow-y: scroll;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel__slide div {
+    width: 100%;
+  }
+
+  .slick-next {
+    right: -15px !important;
+  }
+
+  .slick-prev {
+    left: -15px !important;
+  }
+
+  .slick-next,
+    .slick-prev {
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border: 0px solid transparent !important;
+  }
 }
 
 .hover\:border-2:hover {
