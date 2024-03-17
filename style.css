@@ -1683,6 +1683,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
 .border-l-8 {
   border-left-width: 8px;
 }
@@ -1929,6 +1933,16 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-3 {
@@ -2514,6 +2528,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
 .container {
   max-width: 1200px !important;
 }
@@ -2557,7 +2579,7 @@ body {
   padding-top: 100%;
 }
 
-.carousel__slide div > img {
+.carousel__slide div>img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2567,10 +2589,54 @@ body {
   height: 100%;
 }
 
-@media only screen and (max-width: 7479px) {
+.slick-next {
+  right: -50px !important;
+}
+
+.slick-prev {
+  left: -50px !important;
+}
+
+.slick-next,
+.slick-prev{
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  opacity: 0.7;
+  text-align: center;
+  transition: all 0.3s;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
   .carousel__slide div {
     width: 100%;
   }
+
+  .slick-next {
+    right: -15px !important;
+  }
+
+  .slick-prev {
+    left: -15px !important;
+  }
+
+  .slick-next,
+    .slick-prev{
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border: 0px solid transparent !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }
 
 .carousel__slide img {
@@ -2654,8 +2720,16 @@ body {
     margin-left: auto;
   }
 
+  .md\:min-h-\[117px\] {
+    min-height: 117px;
+  }
+
   .md\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
   }
 
   .md\:basis-2\/3 {
@@ -2668,6 +2742,11 @@ body {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:text-start {
