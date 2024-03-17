@@ -24,7 +24,7 @@
 
 <body class="pt-16 lg:pt-20  ">
   <!-- Header -->
-  <div class="fixed top-0 left-0 right-0 z-20  ">
+  <div class="fixed top-0 left-0 right-0 z-40  ">
     <div div class=" relative bg-white px-3 lg:px-4 top-navbar  border-[#c5c4c4] pt-1">
       <div class="container mx-auto my-auto ">
         <div class="grid grid-cols-12 h-16 lg:h-20">
@@ -267,11 +267,106 @@
             </div>
             
           </div>
-
- 
-
-
     </div>
+    </div>
+  </section>
+
+
+  <!--  -->
+  <section class="px-4 lg:px-4 about-section  bg-cover bg-bottom  pb-14 pt-12 bg-[#F7F5F2]">
+    <div class="container mx-auto">
+      <p class="font-lato text-base font-semibold leading-5 tracking-normal text-center text-[#CB8966] uppercase ">
+        what our customers like
+      </p>
+
+      <h1
+        class="font-epilogue text-3xl lg:text-4xl font-semibold leading-13 tracking-normal text-center capitalize mt-4 text-black">
+        Let’s Hear What They Say
+      </h1>
+
+      <div id="default-carousel" class="relative w-full mt-5" data-carousel="">
+        <!-- Carousel wrapper -->
+        <div class="relative h-auto overflow-hidden rounded-lg md:h-72">
+             <!-- Item 1 -->
+            <div class="hidden duration-[4000] ease-in-out" data-carousel-item>
+              <div class='text-center md:w-[60%] mx-auto flex items-start'>
+                <img src="assets/images/custome-left.svg" alt="">
+                <p class="font-epilogue text-base font-medium leading-7 tracking-normal text-center text-gray-600 mt-4">
+                  Explore a vast array of high-quality pharmaceuticals, supplements and healthcare products. Explore a vast
+                  array of high-quality pharmaceuticals, supplements and healthcare products
+                </p>
+                <img src="assets/images/customer-right.svg" alt="">
+              </div>
+            </div>
+
+              <!-- Item 2 -->
+              <div class="hidden duration-[4000] ease-in-out" data-carousel-item>
+                <div class='text-center md:w-[60%] mx-auto flex items-start'>
+                  <img src="assets/images/custome-left.svg" alt="">
+                  <p class="font-epilogue text-base font-medium leading-7 tracking-normal text-center text-gray-600 mt-4">
+                    Explore a vast array of high-quality pharmaceuticals, supplements and healthcare products. Explore a vast
+                    array of high-quality pharmaceuticals, supplements and healthcare products 2.
+                  </p>
+                  <img src="assets/images/customer-right.svg" alt="">
+                </div>
+              </div>
+
+                <!-- Item 3 -->
+            <div class="hidden duration-[4000] ease-in-out" data-carousel-item>
+              <div class='text-center md:w-[60%] mx-auto flex items-start'>
+                <img src="assets/images/custome-left.svg" alt="">
+                <p class="font-epilogue text-base font-medium leading-7 tracking-normal text-center text-gray-600 mt-4">
+                  Explore a vast array of high-quality pharmaceuticals, supplements and healthcare products. Explore a vast
+                  array of high-quality pharmaceuticals, supplements and healthcare products 3.
+                </p>
+                <img src="assets/images/customer-right.svg" alt="">
+              </div>
+            </div>
+           
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30  flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse  w-full justify-center">
+            <button type="button" class=" rounded-full mx-3 flex flex-col items-center justify-center" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0">
+              <img src="assets/images/Ellipse 34.png" alt=" " class="h-20 w-20 rounded-full flex flex-shrink-0">
+              <div class="dot-data">
+                <h2 class="text-sm font-medium text-black mt-2">Viren A</h2>
+              <p class="text-xs text-gray-600">Personal Finance Expert</p>
+              </div>
+            </button>
+            <button type="button" class=" rounded-full mx-3 flex flex-col items-center justify-center" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1">
+              <img src="assets/images/Mask Group.png" alt=" " class="h-20 w-20 rounded-full flex flex-shrink-0">
+              <div class="dot-data">
+                <h2 class="text-sm font-medium text-black mt-2">Viren B</h2>
+              <p class="text-xs text-gray-600">Personal IT Expert</p>
+              </div>
+            </button>
+            <button type="button" class=" rounded-full mx-3 flex flex-col items-center justify-center" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2">
+              <img src="assets/images/Ellipse 34.png" alt=" " class="h-20 w-20 rounded-full flex flex-shrink-0">
+        <div class="dot-data">
+          <h2 class="text-sm font-medium text-black mt-2">Viren C</h2>
+          <p class="text-xs text-gray-600">Personal Graphic Expert</p>
+        </div>
+            </button>
+        </div>
+        <!-- Slider controls -->
+        <!-- <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button> -->
+    </div>
+    
     </div>
   </section>
 
